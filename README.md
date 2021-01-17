@@ -19,7 +19,7 @@
 
 ### 技术说明
 
-前端页面方面都是由 JSP 来完成，公共页面使用静态包含实现。注册，登陆使用jQuery的选择器结合正则表达式来进行过滤筛选，确定用户名和密码是否可用。使用 AJAX 验证用户名是否可用。使用反射获取地址action参数，来确定其对应的业务方法，再通过反射进行调用。使用工具类对数据进行封装抽取注入到JavaBean。使用EL表达式回显表单。使用数据库连接池druid进行数据库连接，再通过dbutils来对其进行管理，编写Java EE三层架构，实现分页与分页条。使用Session实现购物车功能。使用 Filter 过滤器拦截/pages/manager/所有内容，实现权限检查使用 Filter 和 ThreadLocal 组合管理事务。使用 Filter 过滤器统一给所有的 Service 方法都加上 try-catch。来进行实现的管理。将所有异常都统一交给Tomcat，让 Tomcat 展示错误信息页面。
+前端页面方面都是由 JSP 来完成，公共页面使用静态包含实现。注册，登陆使用jQuery的选择器结合正则表达式来进行过滤筛选，确定用户名和密码是否可用。使用 AJAX 验证用户名是否可用。使用反射获取地址action参数，来确定其对应的业务方法，再通过反射进行调用。使用工具类对数据进行封装抽取注入到JavaBean。使用EL表达式回显表单。使用数据库连接池druid进行数据库连接，再通过dbutils来对其进行管理，编写Java EE三层架构，实现分页与分页条。使用Session实现购物车功能。使用 Filter 过滤器拦截/pages/manager/所有内容，实现权限检查使用 Filter 和 ThreadLocal 组合管理事务。使用 Filter 过滤器统一给所有的 Service 方法都加上 try-catch。来进行事务的管理。将所有异常都统一交给Tomcat，让 Tomcat 展示错误信息页面。
 
 ### 所用到的jar包
 
